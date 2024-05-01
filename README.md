@@ -1,7 +1,7 @@
 # Bayesian Inference on the Solar Dynamo Model
 Project developed under the guidance of Professor Carlo Albert (Eawag), for the unit "Laboratory of Computational Physics - module B" in the Physics of Data Master's Degree at the University of Padua, spring 2023.
 
-Bayesian inference was performed on the solar dynamo model parameters, by using collected data on the number of sunspots, whcich follow the 11-year solar cycle. 
+Bayesian inference was performed on the solar dynamo model parameters, by using collected data on the number of sunspots, which follow the 11-year solar cycle. 
 
 
 
