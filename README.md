@@ -7,7 +7,7 @@ Bayesian inference was performed on the solar dynamo model parameters, by using 
 
 ## Bayesian inference
 
-Given a model with parameters $\boldsymbol{\theta}$, and observational data \boldsymbol{D}, inference can be performed to find credibility intervals for the model parameters, given the data.
+Given a model with parameters $\boldsymbol{\theta}$, and observational data $\boldsymbol{D}$, inference can be performed to find credibility intervals for the model parameters, given the data.
 
 Bayes' theorem is written as:
 
@@ -47,12 +47,12 @@ $$
 \left(\tau\frac{d}{dt} + 1\right)^2 B(t) = - \mathcal{N}(1 + \epsilon\cos(\omega_d t))f(B(t - q))B(t - q) + \sigma B_{max} \sqrt{\tau} \eta(t)
 $$
 
-The observable data is the intensity of the solar magnetic field, $B(t)$, for which the sunspot data (number of sunspots) is a proxy. For more mathematical details, consult the Solar_Dynamo_Report file in the repository. 
+The observable data is the intensity of the solar magnetic field, $B(t)$, for which the sunspot data is a proxy. For more mathematical details, consult the Solar_Dynamo_Report file in the repository. 
 
 The workflow is as follows:
 
 1) initialize values for model parameters (i.e. taken from the previously mentioned paper)
-2) simulate the model by using the Stochastic Delay Differential Equations (SDDE) solver package in Julia
+2) simulate the model by using the Stochastic Delay Differential Equations (SDDE) solver package in Julia (SDDE.jl in the repo)
 3) construct the posterior with the data (real or simulated)
 4) sample the posterior by means of the EMCEE sampler package in python
 5) construct credibility intervals for the parameters and compare with initial values
